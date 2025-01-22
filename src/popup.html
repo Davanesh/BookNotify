@@ -1,31 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BookNotify</title>
   <style>
     body {
-      width: 200px;
-      height: 150px;
+      width: 250px;
+      height: auto;
       font-family: Arial, sans-serif;
+      padding: 10px;
+      margin: 0;
+      background-color: #f5f5f5;
     }
-    button {
+
+    h1 {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #status {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+      padding: 5px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #checkBtn {
+      display: block;
       width: 100%;
       padding: 10px;
       margin-top: 20px;
-      background-color: #007BFF;
+      background-color: #4CAF50;
       color: white;
       border: none;
+      border-radius: 5px;
       cursor: pointer;
+      font-size: 16px;
     }
-    button:hover {
-      background-color: #0056b3;
+
+    #checkBtn:hover {
+      background-color: #45a049;
+    }
+
+    #status.loading {
+      background-color: #ffeb3b;
+      color: #000;
+    }
+
+    #status.available {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    #status.unavailable {
+      background-color: #f44336;
+      color: #fff;
     }
   </style>
 </head>
 <body>
-  <h3>BookNotify</h3>
-  <p>Get notified when bookings are available!</p>
-  <button id="notifyBtn">Enable Notifications</button>
+  <h1>BookNotify</h1>
+  <div id="status">Waiting for updates...</div>
+  <button id="checkBtn">Check Availability</button>
 
   <script src="popup.js"></script>
 </body>
