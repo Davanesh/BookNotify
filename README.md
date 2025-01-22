@@ -35,4 +35,4 @@ We’re building this project collaboratively! Contributions are welcome. Here's
 This project is licensed under the MIT License. See the LICENSE file for details.  
 
 ## Contact  
-Have questions or suggestions? Feel free to reach out via email at [davaneshsaminathan335@gmail.com].  
+Have questions or suggestions? Feel free to reach out via email at davaneshsaminathan335@gmail.com.
