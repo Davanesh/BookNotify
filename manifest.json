@@ -12,5 +12,11 @@
   },
   "action": {
     "default_popup": "src/popup.html"
-  }
+  },
+  "icons": {
+    "16": "assets/icons/BookNotify16.png",
+    "48": "assets/icons/BookNotify48.png",
+    "128": "assets/icons/BookNotify128.png"
+}
+
 }
